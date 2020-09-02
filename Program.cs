@@ -26,7 +26,7 @@ namespace MouseUnSnag
 
         public bool IsUnstickEnabled { get; set; } = true;
         public bool IsJumpEnabled { get; set; } = true;
-        public bool IsScreenWrapEnabled { get; set; } = true;
+        public bool IsScreenWrapEnabled { get; set; } = false; // Defualt to false
 
         private IntPtr SetHook (int HookNum, NativeMethods.HookProc proc)
         {
